@@ -1,0 +1,103 @@
+$cor1: #FFF;
+$cor2: #333;
+$cor3: #DDD;
+$fontP: 14px Ubuntu, sans-serif;
+$fontH1: bold 30px Mogra, sans-serif; 
+@mixin center() {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin gradient() {
+    
+background: #045496; 
+background: -moz-linear-gradient(-45deg,  #045496 0%, #21c3ef 100%); 
+background: -webkit-linear-gradient(-45deg,  #045496 0%,#21c3ef 100%); 
+background: linear-gradient(135deg,  #045496 0%,#21c3ef 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#045496', endColorstr='#21c3ef',GradientType=1 ); 
+
+}
+body{
+	font: $fontP;
+}
+h1{
+	font:$fontH1;
+	
+}
+header#topo{
+	display: block;
+	width: 100%;
+	min-height: 50px;
+	background: $cor1;
+	display: block;
+	float: left;
+	border-bottom: 1px solid $cor3;	
+	overflow: hidden;
+}
+header#topo h1{
+	margin-bottom: 7px;
+	margin-left: 5px;
+	margin-top: 7px;
+	float: left;
+}
+.container{
+	width: 1200px;
+	box-sizing: border-box;
+	@include center();
+	max-width: 100%;
+}
+#open-menu{
+	height: 40px;
+	width: 40px;
+	display: none;
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+#topo nav{
+	display: block;
+	float: right;
+	width: 70%;
+
+}
+#topo nav ul{
+	display: block;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+#topo nav ul li{
+	display: inline-block;
+
+}
+#topo nav ul li a{
+	line-height: 30px;
+	font-size: 20px;
+	text-decoration: none;
+	color: $cor2;
+	padding: 10px 15px;
+	font-weight: bold;
+	display: block;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	&:hover{
+		@include gradient();
+		color: $cor1;
+	}
+
+} 
+
+#home{
+	float: left;
+	background: url(../img/home.jpg) center no-repeat;
+	background-size: cover;
+}
+
+
+
+
+

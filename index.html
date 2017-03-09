@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>ALLAN DA SILVA</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Mogra|Ubuntu:300,400,400i,700" rel="stylesheet">
+
+</head>
+<body>
+	<header id="topo">
+	<div class="container">
+		
+		<h1>Allan da Silva</h1>
+		<nav id="menu-topo">
+			<ul class="menu">
+				<li><a href="">Home</a></li>
+				<li><a href="">Sobre</a></li>
+				<li><a href="">Skills</a></li>
+				<li><a href="">Trabalhos</a></li>
+				<li><a href="">Contato</a></li>
+			</ul>
+		</nav>
+		<button id="open-menu">
+			<span></span>
+		</button>
+	</div>
+	</header>
+	<section id="home">
+		
+	</section>
+	<section id="sobre">
+		
+	</section>
+	<section id="skills">
+		
+	</section>
+	<section id="trabalhos">
+		
+	</section>
+	<section id="contato">
+		
+	</section>
+	<footer>
+		
+	</footer>
+	<button id="get-top">
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</button>
+
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script>
+		$(window).load(function() {
+			$('#home').css({
+				width: $(this).width()+'px',
+				height: $(this).height()-50+'px'
+			});
+		});
+		$(window).resize(function() {
+			$('#home').css({
+				width: $(this).width()+'px',
+				height: $(this).height()-50+'px'
+			});
+		});
+	</script>
+</body>
+</html>
