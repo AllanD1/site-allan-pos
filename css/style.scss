@@ -2,11 +2,17 @@ $cor1: #FFF;
 $cor2: #333;
 $cor3: #DDD;
 $fontP: 14px Ubuntu, sans-serif;
+$fontBt: bold 20px Ubuntu, sans-serif;
 $fontH1: bold 30px Mogra, sans-serif; 
+$fontH12: bold 40px Ubuntu, sans-serif; 
 @mixin center() {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+@mixin trasition($t) {
+	-webkit-transition: $t;
+	transition: $t;
 }
 @mixin gradient() {
     
@@ -21,7 +27,10 @@ body{
 	font: $fontP;
 }
 h1{
-	font:$fontH1;
+	font:$fontH12;
+	display: block;
+	width: 100%;
+	text-align: center;
 	
 }
 header#topo{
@@ -35,16 +44,20 @@ header#topo{
 	overflow: hidden;
 }
 header#topo h1{
+	font:$fontH1;
 	margin-bottom: 7px;
 	margin-left: 5px;
 	margin-top: 7px;
 	float: left;
+	width: auto;
 }
 .container{
 	width: 1200px;
 	box-sizing: border-box;
 	@include center();
 	max-width: 100%;
+	float: none;
+	position: relative;
 }
 #open-menu{
 	height: 40px;
@@ -82,22 +95,72 @@ header#topo h1{
 	padding: 10px 15px;
 	font-weight: bold;
 	display: block;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
+	@include trasition(0.5s);
 	&:hover{
 		@include gradient();
 		color: $cor1;
 	}
 
 } 
-
 #home{
 	float: left;
-	background: url(../img/home.jpg) center no-repeat;
+	background: url(../img/home.jpg) center  bottom no-repeat;
 	background-size: cover;
+	width: 100%;
+	position: relative;
+}
+.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	background: rgba(0,0,0,0.6)
+}
+#home strong{
+	color: $cor1;
+	width: 100%;
+	margin-top: 18%;
+	font-size: 50px;
+	text-align: center;
+	display: block;
+	position: relative;
 }
 
+.bt-outline{
+	@include center();
+	margin-top: 30px;
+	background: transparent;
+	border: solid 3px;
+	font: $fontBt;
+	padding: 15px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	outline: none;
+}
 
+.bt-outline.cor1{
+	border-color: $cor1;
+	color: $cor1;
+	@include trasition(0.5s);
+	&:hover{
+		background: rgba(0,0,0,0.5);
+	}
+}
+#sobre{
+	float: left;
+	padding: 50px 0;
+	width: 100%;
+}
+
+#sobre .foto{
+	display: block;
+	float: left;
+	width: 400px;
+	border: solid 10px $cor1;
+	border-radius: 100%;
+	box-shadow: 0 2px 7px #000; 
+}
 
 
 
