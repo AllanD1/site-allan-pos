@@ -131,9 +131,33 @@ header#topo h1 {
 #sobre .foto {
   display: block;
   float: left;
-  width: 400px;
+  width: 35%;
   border: solid 10px #FFF;
   border-radius: 100%;
   box-shadow: 0 2px 7px #000; }
+
+#sobre .txt {
+  margin-top: 90px;
+  font: 20px Ubuntu, sans-serif;
+  width: 60%;
+  float: right; }
+
+#skills {
+  display: block;
+  float: left;
+  min-height: 300px;
+  background: #DDD;
+  width: 100%;
+  text-align: center; }
+
+.box-4 {
+  width: 24%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px; }
+
+.box-4 .icon-dev {
+  width: 100%;
+  font-size: 100px; }
 
 /*# sourceMappingURL=style.css.map */

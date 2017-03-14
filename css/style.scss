@@ -3,6 +3,7 @@ $cor2: #333;
 $cor3: #DDD;
 $fontP: 14px Ubuntu, sans-serif;
 $fontBt: bold 20px Ubuntu, sans-serif;
+$fontT1: 20px Ubuntu, sans-serif;
 $fontH1: bold 30px Mogra, sans-serif; 
 $fontH12: bold 40px Ubuntu, sans-serif; 
 @mixin center() {
@@ -156,11 +157,38 @@ header#topo h1{
 #sobre .foto{
 	display: block;
 	float: left;
-	width: 400px;
+	width: 35%;
 	border: solid 10px $cor1;
 	border-radius: 100%;
 	box-shadow: 0 2px 7px #000; 
 }
+#sobre .txt{
+	margin-top: 90px;
+	font: $fontT1; 
+	width: 60%;
+	float: right;
+
+}
+#skills{
+	display: block;
+	float: left;
+	min-height: 300px;
+	background: $cor3;
+	width: 100%;
+	text-align: center;
+}
+.box-4{
+	width: 24%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.box-4 .icon-dev{
+	width: 100%;
+	font-size: 100px;
+}
+
+
 
 
 
