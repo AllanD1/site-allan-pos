@@ -148,7 +148,8 @@ header#topo h1 {
   min-height: 300px;
   background: #DDD;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding: 50px 0; }
 
 .box-4 {
   width: 24%;
@@ -165,5 +166,35 @@ header#topo h1 {
   font-size: 100px;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
+
+#trabalhos {
+  padding: 50px 0;
+  text-align: center;
+  float: left;
+  width: 100%; }
+
+.box-3 img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 60px; }
+
+.box-3 {
+  width: 32%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 30px 10px;
+  background: #DDD;
+  margin: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .box-3:hover img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1; }
+  .box-3:hover {
+    background: #FFF; }
 
 /*# sourceMappingURL=style.css.map */
