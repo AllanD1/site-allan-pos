@@ -223,7 +223,27 @@ header#topo h1{
 	&:hover {
 		background: $cor1;
 	}
+}
+#fotos{
+	width: 100%;
+	display: block;
 
+}
+.animation img{
+	width: 100%;
+	display: block;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.animation{
+	width: 20%;
+	float: left;
+	overflow: hidden;
+	&:hover img{
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+		opacity: 1;
+	}
 }
 
 

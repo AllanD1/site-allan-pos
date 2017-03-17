@@ -197,4 +197,23 @@ header#topo h1 {
   .box-3:hover {
     background: #FFF; }
 
+#fotos {
+  width: 100%;
+  display: block; }
+
+.animation img {
+  width: 100%;
+  display: block;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.animation {
+  width: 20%;
+  float: left;
+  overflow: hidden; }
+  .animation:hover img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1; }
+
 /*# sourceMappingURL=style.css.map */
